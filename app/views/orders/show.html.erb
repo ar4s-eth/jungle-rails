@@ -6,6 +6,7 @@
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
+    <h5>Your total is <%= humanized_money_with_symbol @order.total_cents / 100.00 %><h5>
     <h5>A receipt and order details have been sent to <%= @order.email %><h5>
   </div>
 
