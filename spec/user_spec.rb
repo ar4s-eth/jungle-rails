@@ -33,4 +33,16 @@ RSpec.describe User, type: :model do
 
   end
 
+  it 'should create a user when all fields are entered correctly' do 
+    @user = User.create(
+      name: 'Larry Bird',
+      email: 'birdman@nba.com',
+      password: 'bball',
+      password_confirmation: 'bball'
+    )
+    @user.save!
+    expect(@user.name).to include("Larry Bird")
+  end
+
+
 end
