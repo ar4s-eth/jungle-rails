@@ -45,6 +45,11 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'dotenv-rails'
 end
+# Use RSpec for TDD/BDD
+group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
+  # ...
+end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
